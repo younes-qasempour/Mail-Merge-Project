@@ -13,5 +13,5 @@ for line in letter_content:
     letter = letter + line
 
 for name in names:
-    with open(f"./Output/ReadyToSend/{name}letter.txt", "w") as f:
+    with open(f"./Output/ReadyToSend/letter_for_{name}.txt", "w") as f:
         f.write(letter.replace("[name]", name))
